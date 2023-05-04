@@ -1,10 +1,10 @@
 credentials:
   usernames:
-    jsmith:
+    ira:
       email: ira_12345@mail.ru
       name: ira
       password: abc # To be replaced with hashed password
-    rbriggs:
+    irina:
       email: irina_09786@mail.ru
       name: irina
       password: def # To be replaced with hashed password

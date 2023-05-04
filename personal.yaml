@@ -1,0 +1,17 @@
+credentials:
+  usernames:
+    jsmith:
+      email: ira_12345@mail.ru
+      name: ira
+      password: abc # To be replaced with hashed password
+    rbriggs:
+      email: irina_09786@mail.ru
+      name: irina
+      password: def # To be replaced with hashed password
+cookie:
+  expiry_days: 30
+  key: some_signature_key # Must be string
+  name: some_cookie_name
+preauthorized:
+  emails:
+  - melsby@gmail.com

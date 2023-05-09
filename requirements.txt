@@ -5,6 +5,6 @@ streamlit
 openpyxl
 Pillow
 PIL
-requests
+http
 base64
 math

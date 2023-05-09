@@ -3,6 +3,7 @@ python
 pandas
 streamlit
 openpyxl
+Pillow
 PIL
 requests
 base64

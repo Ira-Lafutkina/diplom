@@ -45,6 +45,7 @@ else:
         data = pd.read_excel(file)
         data = pd.DataFrame(data)
         data.columns = data.columns.str.replace(' ', '_')
+        data['Сумма'] = pd.to_numeric(data['Сумма'])
         st.session_state['file_upload'] = True
         st.session_state['data'] = data
         data_time_1 = st.date_input('Начальная дата для анализа')

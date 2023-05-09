@@ -143,7 +143,7 @@ def benford(df):
     df_ts_1 = pd.DataFrame(pd.Series(list_ts_1).groupby(list_ts_1).count() / len(list_ts_1), columns=['Фактическая частота (AP)'])
     df_ts_1.style.set_table_attributes("style='display:inline'").set_caption('Таблица распределения первой цифры')
     df_ts_1 = df_ts_1.join(benford_1())
-    # st.bar_chart(df_ts_1)
+    st.bar_chart(df_ts_1)
     df_ts_1['Z-статистика'] = df_ts_1.apply(lambda x: z_calc(x, n=df_ts_1.shape[0]), axis=1)
     st.write('Таблица распределения первой цифры')
     st.table(df_ts_1)
@@ -152,7 +152,6 @@ def benford(df):
 
     st.subheader('Тест второй цифры')
     df_ts_2 = pd.DataFrame(pd.Series(list_ts_2).groupby(list_ts_2).count() / len(list_ts_2), columns=['Фактическая частота (AP)'])
-    # st.bar_chart(df_ts_2)
     df_ts_2.style.set_table_attributes("style='display:inline'").set_caption('Таблица распределения второй цифры')
     df_ts_2 = df_ts_2.join(benford_2())
     st.bar_chart(df_ts_2)
@@ -164,7 +163,6 @@ def benford(df):
 
     st.subheader('Тест первых двух цифр')
     df_ts_12 = pd.DataFrame(pd.Series(list_ts_12).groupby(list_ts_12).count() / len(list_ts_12), columns=['Фактическая частота (AP)'])
-    # st.bar_chart(df_ts_12)
     df_ts_12.style.set_table_attributes("style='display:inline'").set_caption('Таблица распределения первой пары цифр')
     df_ts_12 = df_ts_12.join(benford_12())
     st.bar_chart(df_ts_12)

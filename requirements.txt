@@ -1,5 +1,4 @@
 altair
-python
 pandas
 streamlit
 openpyxl

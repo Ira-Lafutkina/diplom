@@ -124,7 +124,7 @@ def MAD_12(data):
 
 
 def benford(df):
-    st.header('Тест Бэнфорда')
+    st.header('Основные тесты')
     list_ts_1 = []
     list_ts_2 = []
     list_ts_12 = []
@@ -215,7 +215,7 @@ if st.session_state["sign in"] == False:
 else:
     st.info(f'Вход в систему выполнен под логином - {st.session_state["login"]}')
 
-    button_ben = st.button("Тест Бенфорда")
+    button_ben = st.button("Основные тесты")
     button_add = st.button("Дополнительные тесты")
 
     if st.session_state['file_upload']:

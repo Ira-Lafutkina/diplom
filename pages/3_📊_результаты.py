@@ -167,7 +167,7 @@ def benford(df):
     # st.bar_chart(df_ts_12)
     df_ts_12.style.set_table_attributes("style='display:inline'").set_caption('Таблица распределения первой пары цифр')
     df_ts_12 = df_ts_12.join(benford_12())
-    st.bar_chart(df_ts_1)
+    st.bar_chart(df_ts_12)
     df_ts_12['Z-статистика'] = df_ts_12.apply(lambda x: z_calc(x, n=df_ts_12.shape[0]), axis=1)
     st.write('Таблица распределения первых двух цифр')
     st.table(df_ts_12)

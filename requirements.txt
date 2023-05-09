@@ -3,7 +3,6 @@ pandas
 streamlit
 openpyxl
 Pillow
-PIL
 http
 base64
 math

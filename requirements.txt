@@ -4,4 +4,3 @@ streamlit
 openpyxl
 Pillow
 requests
-math

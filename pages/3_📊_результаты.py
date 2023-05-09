@@ -73,7 +73,7 @@ def x_square(data, list_ts_n):
     EC = df_ts_n['Ожидаемое кол-во чисел (EC)']
     AC = df_ts_n['Фактическое кол-во чисел (AC)']
     x_s = (((AC-EC)**2)/EC).sum()
-    return f'хи-квадрат - {x_s}'
+    return f'хи-квадрат: {x_s}'
 
 def MAD_1(data):
     AP = data['Фактическая частота (AP)']
@@ -88,7 +88,7 @@ def MAD_1(data):
         st.write('mad - Предельно допустимое соответствие')
     elif (mad >= 0.015):
         st.write('mad - Несоответствие')
-    return f'Значение mad - {mad}'
+    return f'Значение mad: {mad}'
 
 def MAD_2(data):
     AP = data['Фактическая частота (AP)']
@@ -103,7 +103,7 @@ def MAD_2(data):
         st.write('mad - Предельно допустимое соответствие')
     elif (mad >= 0.012):
         st.write('mad - Несоответствие')
-    return f'Значение mad - {mad}'
+    return f'Значение mad: {mad}'
 
 def MAD_12(data):
     AP = data['Фактическая частота (AP)']
@@ -118,7 +118,7 @@ def MAD_12(data):
         st.write('mad - Предельно допустимое соответствие')
     elif (mad >= 0.0022):
         st.write('mad - Несоответствие')
-    return f'Значение mad - {mad}'
+    return f'Значение mad: {mad}'
 
 
 

@@ -3,9 +3,6 @@ from PIL import Image
 import requests
 import pandas as pd
 import base64
-import matplotlib.pyplot as plt
-from matplotlib.ticker import PercentFormatter
-import numpy as np
 import math
 
 st.set_page_config(
@@ -272,4 +269,3 @@ else:
                     download = FileDownloader(data.to_csv(),file_ext='csv').download()                 
     else:
         st.error("Для проведений теста необходимо загрузить файл во вкладке 'анализ журнальных проводок'")   
-    

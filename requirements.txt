@@ -4,5 +4,4 @@ streamlit
 openpyxl
 Pillow
 requests
-base64
 math

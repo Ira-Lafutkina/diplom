@@ -3,6 +3,6 @@ pandas
 streamlit
 openpyxl
 Pillow
-http
+requests
 base64
 math

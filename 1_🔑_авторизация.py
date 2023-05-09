@@ -16,7 +16,6 @@ print(type(raw))
 image = Image.open(raw)
 st.image(image)
 
-st.sidebar.info("Select a page above.")
 text_input_container_0 = st.empty()
 text_input_container_1 = st.empty()
 text_input_container_2 = st.empty()

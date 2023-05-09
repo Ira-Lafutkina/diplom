@@ -10,13 +10,13 @@ st.set_page_config(
     page_icon="📊",
 )
 
-url = 'https://drive.google.com/file/d/1btfNGC8jgp8wlgcVIziuQxe9kyrdSnVD/view?usp=sharing'
-file_id = url.split('/')[-2]
-read_url='https://drive.google.com/uc?id=' + file_id
+# url = 'https://drive.google.com/file/d/1btfNGC8jgp8wlgcVIziuQxe9kyrdSnVD/view?usp=sharing'
+# file_id = url.split('/')[-2]
+# read_url='https://drive.google.com/uc?id=' + file_id
 
-raw = requests.get(read_url, stream=True).raw
-image = Image.open(raw)
-st.image(image)
+# raw = requests.get(read_url, stream=True).raw
+# image = Image.open(raw)
+# st.image(image)
 
 timestr = ''
 

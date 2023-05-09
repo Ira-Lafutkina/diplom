@@ -1,0 +1,13 @@
+altair
+pandas
+streamlit
+openpyxl
+matplotlib
+PIL
+matplotlib
+numpy
+math
+requests
+streamlit_authenticator
+pathlib
+base64

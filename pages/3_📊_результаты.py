@@ -227,7 +227,7 @@ else:
                 st.subheader('Редкие')
                 st.write('Проверка на наличие несвязанных, необычных или редких проводок')
                 st.write('Счет Дт')
-                data_seldom_dt = data.groupby('Счет_Дт')['Счет_Дт'].count()
+                data_seldom_dt = data.groupby('Счет_Дт')['Счет_Дт'].count().fillna(0)
                 data_seldom_dt = pd.DataFrame(data_seldom_dt)
                 data_seldom_dt = data_seldom_dt.dropna(subset=['Счет_Дт'])
                 data_seldom_dt = data_seldom_dt[data_seldom_dt>0]
@@ -237,7 +237,7 @@ else:
                 if data_seldom_dt.shape[0] > 0:
                     download = FileDownloader(data_seldom_dt.to_csv(),file_ext='csv').download()
                 st.write('Счет Кт')
-                data_seldom_kt = data.groupby('Счет_Кт')['Счет_Кт'].count()
+                data_seldom_kt = data.groupby('Счет_Кт')['Счет_Кт'].count().fillna(0)
                 data_seldom_kt = pd.DataFrame(data_seldom_kt)
                 data_seldom_kt = data_seldom_kt.dropna(subset=['Счет_Кт'])
                 data_seldom_kt = data_seldom_kt[data_seldom_kt>0]
